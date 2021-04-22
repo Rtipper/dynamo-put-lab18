@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/jennerdulce/dynamo-put-jdd#readme",
   "dependencies": {
-    "dynamoose": "^2.7.3"
+    "dynamoose": "^2.7.3",
+    "uuid": "^8.3.2"
   }
 }

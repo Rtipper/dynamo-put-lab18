@@ -2,7 +2,6 @@
 
 const friendsModel = require('./schema.js');
 
-
 exports.handler = async (event) => {
   try {
     const body = JSON.parse(event.body)
@@ -17,6 +16,7 @@ exports.handler = async (event) => {
       await friendsModel.update({ "id": id }, {"phone": body.phone})
 
     const strigifiedId = JSON.stringify(id)
+
     return {
       statusCode: 201,
       body: `ID: ${strigifiedId} updated!`
